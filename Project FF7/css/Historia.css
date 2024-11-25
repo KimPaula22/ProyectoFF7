@@ -1,0 +1,83 @@
+
+
+header {
+    background-color: rgba(00, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #00fff786;
+    
+}
+
+header h1 {
+    color: #00fff7; 
+    
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    color: #00fff7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+nav a:hover {
+    background-color: #555; 
+    color: #00fff7; 
+}
+
+#historia {
+    background-color: rgba(00, 0, 0, 0.6);
+    padding: 100px;
+    border-radius: 10px;
+   
+}
+
+#historia p {
+    margin-bottom: 15px;
+}
+section h2{
+    color: #00fff7;
+}
+body{
+    background-image: url(./ImagenesInicio/fondo_historia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-family: Playfair Display, sans-serif;
+  
+    
+}
+
+.cuadro{
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px ;
+    background-color: rgba(0, 0, 0, 0.392);
+    border: 3px solid #00fff786;
+
+
+    
+}
+#video_historia
+{
+     margin-left: 30px;
+     display: flex;
+    
+}
+@media (max-width: 768px) {
+    #video_historia {
+        margin: 10px auto;
+    }
+}

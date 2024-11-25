@@ -1,0 +1,82 @@
+
+
+header {
+    background-color: rgba(00, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+header h1 {
+    color: #00fff7; 
+    
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    color: #00fff7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+nav a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el ratón */
+    color: #00fff7; /* Cambia el color del texto al pasar el ratón */
+}
+
+#gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.Galeria_ff7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.Galeria_ff7 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Galeria_ff7 img:hover {
+    transform: scale(1.1);
+}
+article h2{
+    color: #44ecf2;
+}
+
+body{
+    background-image: url(./ImagenesInicio/fondofinal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#video{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center; 
+}
+
+
+@media (max-width: 768px) {
+    .Galeria_ff7 {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

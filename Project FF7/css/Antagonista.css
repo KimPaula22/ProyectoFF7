@@ -1,0 +1,105 @@
+
+
+header {
+    background-color: rgba(00, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+header h1 {
+    color: #00fff7; 
+    
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    color: #00fff7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+nav a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el ratón */
+    color: #00fff7; /* Cambia el color del texto al pasar el ratón */
+}
+
+
+.character_sefirot {
+    position: relative;
+    margin: 20px auto; 
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.character_sefirot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    top: 80%;
+}
+
+.overlay h3 {
+    margin-bottom: 10px;
+    color: #f6ff00;
+   
+}
+
+.overlay p {
+    margin: 0; ;
+}
+
+.character_sefirot:hover .overlay {
+    opacity: 1;
+}
+
+body{
+    background-image: url(./ImagenesInicio/fondo_historia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+  
+    .character_sefirot {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .overlay {
+        top: 70%;
+      
+    }
+}
+footer{
+    color: aliceblue;
+}
